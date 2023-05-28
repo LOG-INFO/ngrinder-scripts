@@ -39,7 +39,7 @@ class Test1 {
     // This method is continuously executed until you stop the test
     @Test
     public void test(){
-        HTTPResponse result = request.GET("http://localhost:8080/hello");
+        HTTPResponse result = request.GET("http://host.docker.internal:8080/hello");
         if (result.statusCode == 301 || result.statusCode == 302) {
             grinder.logger.warn("Warning. The response may not be correct. The response code was {}.", result.statusCode);
         } else {
