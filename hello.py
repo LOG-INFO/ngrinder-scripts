@@ -13,7 +13,7 @@ test1.record(request)
 class TestRunner:
     # 테스트 초기화
     def __init__(self):
-        self.url = "http://localhost:80/hello"  # 호출할 URL
+        self.url = "http://localhost:8080/hello"  # 호출할 URL
 
     # 스크립트 실행 메소드
     def __call__(self):
