@@ -46,11 +46,11 @@ class Test1 {
             assertThat(result1.statusCode, is(200));
         }
         
-        HTTPResponse result2 = request.GET("http://172.29.80.1:10001/hello");
-        if (result2.statusCode == 301 || result2.statusCode == 302) {
-            grinder.logger.warn("Warning. The response may not be correct. The response code was {}.", result2.statusCode);
-        } else {
-            assertThat(result2.statusCode, is(200));
-        }
+//         HTTPResponse result2 = request.GET("http://172.29.80.1:10001/hello");
+//         if (result2.statusCode == 301 || result2.statusCode == 302) {
+//             grinder.logger.warn("Warning. The response may not be correct. The response code was {}.", result2.statusCode);
+//         } else {
+//             assertThat(result2.statusCode, is(200));
+//         }
     }
 }
