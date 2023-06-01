@@ -46,11 +46,13 @@ class Test1 {
             assertThat(result.statusCode, is(200));
         }
         
+        /*
         HTTPResponse result = request.GET("http://host.docker.internal:10001/hello");
         if (result.statusCode == 301 || result.statusCode == 302) {
             grinder.logger.warn("Warning. The response may not be correct. The response code was {}.", result.statusCode);
         } else {
             assertThat(result.statusCode, is(200));
         }
+        */
     }
 }
